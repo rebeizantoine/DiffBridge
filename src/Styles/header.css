@@ -1,0 +1,77 @@
+.header-ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: Rubik, sans-serif;
+    font-size: 30px;
+  }
+  
+  .header-ul li,
+  a {
+    font-family: Rubik, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 130px !important;
+    margin-top: 1.5%;
+    text-decoration: none;
+    color: #FFFFFF !important;
+  }
+  .header-ul a:hover {
+    cursor: pointer;
+    color: orangered !important;
+  }
+  .header-all {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #1F1F1F;
+    font-family: Rubik, sans-serif;
+    color: #1F1F1F !important;
+  }
+  .header-1 {
+    margin-left: 150px;
+  }
+  .header-2 {
+    width: 200px;
+    margin-left: 12%;
+    display: flex;
+    color: #FFFFFF !important;
+  }
+
+  .header-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Allow the container to grow */
+  }
+
+  .weird-blue {
+    color: #FFFFFF !important;
+  }
+  .weird-blue:hover {
+    color: orangered !important;
+    cursor: pointer;
+  }
+  
+
+  .h4-header {
+    margin-top: -5px;
+  }
+  .box-near-header {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .steel-city {
+    width: 90px;
+    height: 120px;
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+  .steel-city:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Increase size by 10% on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
