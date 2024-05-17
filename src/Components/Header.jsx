@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Styles/header.css';
 import { Helmet } from 'react-helmet';
 import BrushLogo from '../Images/HighRez@3x.jpg'
+import BrushLogopng from '../Images/HR_White.png'
 
 const Header = () => {
   return (
@@ -23,7 +24,7 @@ const Header = () => {
         <div className="header-all">
           <div className="header-title">
             <img
-            src={BrushLogo}
+            src={BrushLogopng}
               className="steel-city"
               alt=""
             />

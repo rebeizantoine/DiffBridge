@@ -65,10 +65,10 @@
     margin-left: 10px;
   }
   .steel-city {
-    width: 90px;
-    height: 120px;
-    margin-left: 60px;
-    margin-top: 30px;
+    width: 200px;
+    height: 340px;
+    margin-left: 100px;
+    margin-top: -60px;
   }
   .steel-city:hover {
     cursor: pointer;
