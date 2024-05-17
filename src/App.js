@@ -1,13 +1,15 @@
-import './App.css';
-import Header from './Components/Header';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import "./App.css";
+import Header from "./Components/Header";
+import Hero from "./Components/Hero";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <div>
-      <Header/>
-      <title>Bridging Brushes</title>
+        <Header />
+        <Hero />
+        <title>Bridging Brushes</title>
       </div>
     </div>
   );
