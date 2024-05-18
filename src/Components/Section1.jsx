@@ -1,26 +1,26 @@
-import React from 'react';
-import '../Styles/section1.css'; // Import the CSS file
-import imageplaceholder1 from '../Images/image_placeholder1.png';
-import imageplaceholder2 from '../Images/image_placeholder2.png';
-import imageplaceholder3 from '../Images/image_placeholder3.png';
-import imageplaceholder4 from '../Images/image_placeholder4.png';
-import { Helmet } from 'react-helmet';
+import React from "react";
+import "../Styles/section1.css"; // Import the CSS file
+import imageplaceholder1 from "../Images/image_placeholder1.png";
+import imageplaceholder2 from "../Images/image_placeholder2.png";
+import imageplaceholder3 from "../Images/image_placeholder3.png";
+import imageplaceholder4 from "../Images/image_placeholder4.png";
+import { Helmet } from "react-helmet";
 
 const Section1 = () => {
   return (
     <div className="section-container">
-         <Helmet>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap"
-            rel="stylesheet"
-          />
-        </Helmet>
+      <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
       <h2 className="section-title">Explore Our Artwork</h2>
       <div className="image-container">
         <div className="image-item">
@@ -50,6 +50,6 @@ const Section1 = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Section1;
