@@ -54,11 +54,26 @@
 .circle2:hover img {
   filter: brightness(0.7); /* This will dim the image on hover */
 }
-.circle2 .circle2 .overlay span {
+
+.circle2 .overlay .artist-name {
   color: white;
   font-size: 20px;
   font-weight: bold;
   font-family: "Rubik", sans-serif;
+  padding: 10px 0;
+}
+
+.circle2 .overlay .latest-work {
+  font-size: 16px;
+  color: rgba(112, 136, 131);
+}
+
+.small-image {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
 .view-all-div {
@@ -81,19 +96,7 @@
   font-size: large;
   transition: background-color 0.6s ease;
 }
-.latest-work {
-  font-size: 20px !important;
-  color: rgba(112, 136, 131);
-}
 
 .view-all-button:hover {
-  background-color: rgb(61, 68, 67); /* Change to desired hover color */
-}
-.circle2 .overlay .artist-name {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Rubik", sans-serif;
-  padding: 10px 0; /* Adjust the padding as needed */
-  margin-top: 110px;
+  background-color: rgb(61, 68, 67);
 }

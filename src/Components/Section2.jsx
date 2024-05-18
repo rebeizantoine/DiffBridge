@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../Styles/section2.css";
 import stockimage1 from "../Images/stock_face1.png";
 import stockimage2 from "../Images/stock_face2.png";
@@ -7,12 +7,42 @@ import stockimage4 from "../Images/stock_face4.png";
 import stockimage5 from "../Images/stock_face5.png";
 import stockimage6 from "../Images/stock_face6.png";
 import smallimage1 from "../Images/image_placeholder1.png";
+import "../Styles/animations.css"; // Import the animations
 
 const Section2 = () => {
-  return (
-    <div className="section2-container">
-      <h2 className="section-title">Our Artists</h2>
+  const [visible, setVisible] = useState(false);
+  const ref = useRef();
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [ref]);
+
+  return (
+    <div
+      className={`section2-container ${visible ? "visible" : "fade-in"}`}
+      ref={ref}
+    >
+      <h2 className="section-title">Our Artists</h2>
       <div className="circles-grid">
         <div className="circle2">
           <img src={stockimage1} alt="Artist 1" />
@@ -75,9 +105,9 @@ const Section2 = () => {
           </div>
         </div>
         <div className="circle2">
-          <img src={stockimage6} alt="" />
+          <img src={stockimage6} alt="Artist 6" />
           <div className="overlay">
-            <span className="artist-name">Giovanni ALparotti</span>
+            <span className="artist-name">Artist 6</span>
             <span className="latest-work">Latest Work: La Bohème</span>
             <img
               src={smallimage1}

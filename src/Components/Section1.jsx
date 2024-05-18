@@ -1,14 +1,37 @@
-import React from "react";
-import "../Styles/section1.css"; // Import the CSS file
+import React, { useEffect, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../Styles/section1.css";
 import imageplaceholder1 from "../Images/image_placeholder1.png";
 import imageplaceholder2 from "../Images/image_placeholder2.png";
 import imageplaceholder3 from "../Images/image_placeholder3.png";
 import imageplaceholder4 from "../Images/image_placeholder4.png";
 import { Helmet } from "react-helmet";
+import useIntersectionObserver from "./useIntersectionObserver";
+import "../Styles/animations.css"; // Import the animations
 
 const Section1 = () => {
+  const [visible, setVisible] = useState(false);
+  const ref = useIntersectionObserver(() => setVisible(true), {
+    threshold: 0.1,
+  });
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "cubic-bezier(0.25, 0.1, 0.25, 1)",
+  };
+
   return (
-    <div className="section-container">
+    <div
+      className={`section-container ${visible ? "visible" : "fade-in"}`}
+      ref={ref}
+    >
       <Helmet>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -22,7 +45,7 @@ const Section1 = () => {
         />
       </Helmet>
       <h2 className="section-title">Explore Our Artwork</h2>
-      <div className="image-container">
+      <Slider {...settings} className="slider-container">
         <div className="image-item">
           <div className="image-wrapper">
             <img src={imageplaceholder1} alt="placeholder 1" />
@@ -47,7 +70,7 @@ const Section1 = () => {
             <p className="image-text">Image 4 Description</p>
           </div>
         </div>
-      </div>
+      </Slider>
     </div>
   );
 };
