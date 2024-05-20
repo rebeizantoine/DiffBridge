@@ -1,96 +1,70 @@
-.artists-page {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .page-title {
-    font-size: 3em; /* Adjust the font size as needed */
-    color: #333; /* Change the color as needed */
-    margin-bottom: 20px;
-    font-family: 'Rubik', sans-serif; /* Use the Rubik font */
-  }
-  
-  .search-bar {
-    margin-bottom: 20px;
-  }
-  
-  .search-bar input {
-    width: 50%;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  .artists-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .artist-bubble {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .bubble-content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.3s ease;
-  }
-  
-  .artist-image {
-    opacity: 1;
-    z-index: 1;
-  }
-  
-  .artist-artwork {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    z-index: 2;
-    transition: opacity 0.3s ease;
-  }
-  
-  .artist-name {
-    position: absolute;
-    bottom: -20px; /* Position it under the bubble */
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .artist-bubble:hover .artist-image {
-    opacity: 0;
-  }
-  
-  .artist-bubble:hover .artist-artwork {
-    opacity: 1;
-  }
-  
-  .artist-bubble:hover .artist-name {
-    opacity: 1;
-  }
-  
+/* General page styling */
+.single-artist-page {
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  background-color: #000; /* Background color */
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+}
+
+.header {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.artist-name {
+  font-size: 3em; /* Adjust the font size as needed */
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white; /* Ensure the text is white */
+}
+
+.artist-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  width: 80%; /* Fixed width */
+  max-width: 800px; /* Ensure it doesn't get too wide */
+}
+
+.artist-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay with less opacity */
+  border-radius: 8px;
+  z-index: 1;
+  /* Ensure there is no blur */
+  backdrop-filter: none;
+}
+
+.artist-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artist-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.artist-description {
+  font-size: 1.2em;
+  padding: 0 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}

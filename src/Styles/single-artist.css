@@ -1,0 +1,99 @@
+/* General page styling */
+.single-artist-page {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color:transparent; /* Background color */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+  }
+  
+  .header {
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .artist-name {
+    font-size: 3em; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white; /* Ensure the text is white */
+  }
+  
+  .artist-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    width: 80%; /* Fixed width */
+    max-width: 800px; /* Ensure it doesn't get too wide */
+    margin-bottom: 40px;
+  }
+  
+  .artist-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+    border-radius: 8px;
+    z-index: 1;
+  }
+  
+  .artist-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .artist-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .artist-description {
+    font-size: 1.2em;
+    padding: 0 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .artworks-section {
+    width: 80%; /* Fixed width */
+    max-width: 800px; /* Ensure it doesn't get too wide */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .artwork {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .artwork-image {
+    width: 50%; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .artwork-description {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ccc; /* Slightly lighter color for the description */
+    text-align: center;
+  }
+  
