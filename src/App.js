@@ -6,6 +6,7 @@ import Section1 from "./Components/Section1";
 import Section2 from "./Components/Section2";
 import Artists from "./Components/Artists";
 import New from "./Components/New";
+import SingleArtist from "./Components/SingleArtist";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -35,6 +36,15 @@ function App() {
               <>
                 <Header />
                 <Artists />
+              </>
+            }
+          />
+          <Route
+            path="/single"
+            element={
+              <>
+                <Header />
+                <SingleArtist />
               </>
             }
           />
