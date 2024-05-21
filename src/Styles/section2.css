@@ -2,7 +2,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  /* margin: 20px; */
+  margin-top: 200px;
+}
+
+.featured-artists {
+  position: relative;
+  font-family: Rubik, sans-serif;
+  height: 150px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.featured-artists::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../Images/image_placeholder3.png") no-repeat center center;
+  background-size: cover;
+  opacity: 0.8; /* 20% opacity */
+  z-index: -1; /* Ensure it is behind other content */
+}
+
+.section-h21 {
+  font-size: 50px;
+  letter-spacing: 6px;
+  color: #237d8f;
+  margin-bottom: 0px;
+  font-family: "Rubik", sans-serif;
+  height: 75px;
+  padding-top: 40px;
 }
 
 .circles-grid {
@@ -99,4 +131,64 @@
 
 .view-all-button:hover {
   background-color: rgb(61, 68, 67);
+}
+
+.artist-list {
+  display: flex;
+  height: 1000px;
+}
+
+.right-image-des img {
+  max-width: 400px;
+  height: 300px;
+  margin-right: 75px;
+}
+.right-rect img {
+  width: 100px;
+  height: 300px;
+}
+.left-artist-des {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 150px;
+}
+.left-artist-des h2 {
+  font-size: 25px;
+  font-family: rubik;
+  font-weight: 700px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: left;
+}
+.left-artist-des p {
+  max-width: 445px;
+  height: 220px;
+  font-size: 13px;
+  line-height: 1.9;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: Rubik, sans-serif;
+  margin: 20px auto; /* Center the paragraph horizontally with top and bottom margins */
+  padding: 0 20px; /* Equal padding on the left and right */
+  display: inline-block; /* Ensures the paragraph adheres to the max-width and height constraints */
+  text-align: justify; /* Justify text for a clean look */
+  margin: 0; /* Remove default margin for tighter spacing */
+  padding: 0; /* Remove default padding for tighter spacing */
+  margin-bottom: 30px;
+}
+.left-artist-des button {
+  width: 83px;
+  height: 35px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 700px;
+  color: #ffffff;
+  background-color: #111111;
+}
+.left-artist-des-button {
+  margin-top: -40px !important;
+  margin-left: 350px;
 }

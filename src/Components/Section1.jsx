@@ -10,6 +10,7 @@ import imageplaceholder4 from "../Images/image_placeholder4.png";
 import { Helmet } from "react-helmet";
 import useIntersectionObserver from "./useIntersectionObserver";
 import "../Styles/animations.css"; // Import the animations
+import backgroundimage from "../Images/image_placeholder1.png";
 
 const Section1 = () => {
   const [visible, setVisible] = useState(false);
@@ -44,7 +45,10 @@ const Section1 = () => {
           rel="stylesheet"
         />
       </Helmet>
-      <h2 className="section-title">Explore Our Artwork</h2>
+      <div class="scroll-watcher"></div>
+      <div className="featured-paintings">
+        <h2 className="section-h2">Featured Paintings</h2>
+      </div>
       <Slider {...settings} className="slider-container">
         <div className="image-item">
           <div className="image-wrapper">

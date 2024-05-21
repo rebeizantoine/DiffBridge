@@ -7,6 +7,8 @@ import stockimage4 from "../Images/stock_face4.png";
 import stockimage5 from "../Images/stock_face5.png";
 import stockimage6 from "../Images/stock_face6.png";
 import smallimage1 from "../Images/image_placeholder1.png";
+import smallimage4 from "../Images/image_placeholder4.png";
+import greenrect from "../Images/green rectangle.png";
 import "../Styles/animations.css"; // Import the animations
 
 const Section2 = () => {
@@ -42,83 +44,31 @@ const Section2 = () => {
       className={`section2-container ${visible ? "visible" : "fade-in"}`}
       ref={ref}
     >
-      <h2 className="section-title">Our Artists</h2>
-      <div className="circles-grid">
-        <div className="circle2">
-          <img src={stockimage1} alt="Artist 1" />
-          <div className="overlay">
-            <span className="artist-name">Artist 1</span>
-            <span className="latest-work">Latest Work: La Bohème</span>
-            <img
-              src={smallimage1}
-              alt="Latest Work 1"
-              className="small-image"
-            />
-          </div>
-        </div>
-        <div className="circle2">
-          <img src={stockimage2} alt="Artist 2" />
-          <div className="overlay">
-            <span className="artist-name">Artist 2</span>
-            <span className="latest-work">Latest Work: La Bohème</span>
-            <img
-              src={smallimage1}
-              alt="Latest Work 2"
-              className="small-image"
-            />
-          </div>
-        </div>
-        <div className="circle2">
-          <img src={stockimage3} alt="Artist 3" />
-          <div className="overlay">
-            <span className="artist-name">Artist 3</span>
-            <span className="latest-work">Latest Work: La Bohème</span>
-            <img
-              src={smallimage1}
-              alt="Latest Work 3"
-              className="small-image"
-            />
-          </div>
-        </div>
-        <div className="circle2">
-          <img src={stockimage4} alt="Artist 4" />
-          <div className="overlay">
-            <span className="artist-name">Artist 4</span>
-            <span className="latest-work">Latest Work: La Bohème</span>
-            <img
-              src={smallimage1}
-              alt="Latest Work 4"
-              className="small-image"
-            />
-          </div>
-        </div>
-        <div className="circle2">
-          <img src={stockimage5} alt="Artist 5" />
-          <div className="overlay">
-            <span className="artist-name">Artist 5</span>
-            <span className="latest-work">Latest Work: La Bohème</span>
-            <img
-              src={smallimage1}
-              alt="Latest Work 5"
-              className="small-image"
-            />
-          </div>
-        </div>
-        <div className="circle2">
-          <img src={stockimage6} alt="Artist 6" />
-          <div className="overlay">
-            <span className="artist-name">Artist 6</span>
-            <span className="latest-work">Latest Work: La Bohème</span>
-            <img
-              src={smallimage1}
-              alt="Latest Work 6"
-              className="small-image"
-            />
-          </div>
-        </div>
+      <div className="featured-artists">
+        <h2 className="section-h21">Featured Paintings</h2>
       </div>
-      <div className="view-all-div">
-        <button className="view-all-button">View All</button>
+
+      <div className="artist-list">
+        <div className="left-artist-des">
+          <h2>Paolo Hernandez</h2>
+          <p>
+            Experience the transformative power of fashion and media makeup
+            artistry/styling. I am dedicated to enhancing your natural beauty
+            and bringing your creative visions to life. From runway-ready looks
+            to captivating editorial shoots, I specialize in crafting stunning
+            makeup and styling that leave a lasting impression. With a keen eye
+            for detail and a passion for the latest trends, we ensure you always
+            look and feel your best. Trust me to elevate your fashion and media
+            endeavors with our impeccable artistry and styling expertise.
+          </p>
+          <button className="left-artist-des-button">Read More</button>
+        </div>
+        <div className="right-image-des">
+          <img src={smallimage4} alt="" />
+        </div>
+        <div className="right-rect">
+          <img src={greenrect} alt="" />
+        </div>
       </div>
     </div>
   );

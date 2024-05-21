@@ -36,9 +36,8 @@ const Hero = () => {
         <h1 className="hero-h1">Welcome to My Petite Gallery</h1>
         <h2 className="hero-h2">Art for Humanity</h2>
         <p className="hero-p">
-          At My Petite Gallery, we blend the stern resilience of conflict-zone
-          artists with our own feminine strength, offering a unique platform
-          that diversifies the art scene while giving back to society.
+          own feminine strength, offering a unique platform that diversifies the
+          art scene while giving back to society.
         </p>
         <button className="read-more-button">Read More</button>
       </div>
