@@ -3,8 +3,10 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-  font-family: Rubik, sans-serif;
   font-size: 30px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 body {
   background-color: #1f1f1f;
@@ -12,7 +14,7 @@ body {
 
 .header-ul li,
 a {
-  font-family: Rubik, sans-serif;
+  font-family: Libre Baskerville, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;

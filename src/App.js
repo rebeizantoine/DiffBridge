@@ -9,6 +9,7 @@ import New from "./Components/New";
 import SingleArtist from "./Components/SingleArtist";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Exhibition from "./Components/Exhibition";
 
 function App() {
   return (
@@ -45,6 +46,15 @@ function App() {
               <>
                 <Header />
                 <SingleArtist />
+              </>
+            }
+          />
+          <Route
+            path="/exhibition"
+            element={
+              <>
+                <Header />
+                <Exhibition/>
               </>
             }
           />
