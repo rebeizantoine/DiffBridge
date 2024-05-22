@@ -26,9 +26,9 @@ function App() {
                 <Hero />
                 <Section1 />
                 <Section2 />
-                <New />
+                {/* <New /> */}
                 <Counter />
-                <Footer />
+                {/* <Footer /> */}
                 <RealFooter />
 
                 <title>Bridging Brushes</title>
