@@ -1,6 +1,5 @@
 .hero-container {
   position: relative;
-<<<<<<< HEAD
   font-family: Rubik, sans-serif;
   height: 700px;
 }
@@ -16,9 +15,7 @@
   background-size: cover;
   opacity: 0.2; /* 20% opacity */
   z-index: -1; /* Ensure it is behind other content */
-=======
   font-family: Libre Baskerville, sans-serif;
->>>>>>> 1844494cffafce7e4bbd366f7b4254ebc3eac9e3
 }
 
 .video-container {

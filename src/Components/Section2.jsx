@@ -70,6 +70,74 @@ const Section2 = () => {
           <img src={greenrect} alt="" />
         </div>
       </div>
+      <div className="artist-list-right">
+        <div className="right-rect2">
+          <img src={greenrect} alt="" />
+        </div>
+        <div className="right-image-des2">
+          <img src={smallimage4} alt="" />
+        </div>
+
+        <div className="left-artist-des2">
+          <h2>Paolo Hernandez</h2>
+          <p>
+            Experience the transformative power of fashion and media makeup
+            artistry/styling. I am dedicated to enhancing your natural beauty
+            and bringing your creative visions to life. From runway-ready looks
+            to captivating editorial shoots, I specialize in crafting stunning
+            makeup and styling that leave a lasting impression. With a keen eye
+            for detail and a passion for the latest trends, we ensure you always
+            look and feel your best. Trust me to elevate your fashion and media
+            endeavors with our impeccable artistry and styling expertise.
+          </p>
+          <button className="left-artist-des-button2">Read More</button>
+        </div>
+      </div>
+      <div className="artist-list">
+        <div className="left-artist-des">
+          <h2>Paolo Hernandez</h2>
+          <p>
+            Experience the transformative power of fashion and media makeup
+            artistry/styling. I am dedicated to enhancing your natural beauty
+            and bringing your creative visions to life. From runway-ready looks
+            to captivating editorial shoots, I specialize in crafting stunning
+            makeup and styling that leave a lasting impression. With a keen eye
+            for detail and a passion for the latest trends, we ensure you always
+            look and feel your best. Trust me to elevate your fashion and media
+            endeavors with our impeccable artistry and styling expertise.
+          </p>
+          <button className="left-artist-des-button">Read More</button>
+        </div>
+        <div className="right-image-des">
+          <img src={smallimage4} alt="" />
+        </div>
+        <div className="right-rect">
+          <img src={greenrect} alt="" />
+        </div>
+      </div>
+      <div className="artist-list-right">
+        <div className="right-rect2">
+          <img src={greenrect} alt="" />
+        </div>
+        <div className="right-image-des2">
+          <img src={smallimage4} alt="" />
+        </div>
+
+        <div className="left-artist-des2">
+          <h2>Paolo Hernandez</h2>
+          <p>
+            Experience the transformative power of fashion and media makeup
+            artistry/styling. I am dedicated to enhancing your natural beauty
+            and bringing your creative visions to life. From runway-ready looks
+            to captivating editorial shoots, I specialize in crafting stunning
+            makeup and styling that leave a lasting impression. With a keen eye
+            for detail and a passion for the latest trends, we ensure you always
+            look and feel your best. Trust me to elevate your fashion and media
+            endeavors with our impeccable artistry and styling expertise.
+          </p>
+          <button className="left-artist-des-button2">Read More</button>
+        </div>
+      </div>
     </div>
   );
 };

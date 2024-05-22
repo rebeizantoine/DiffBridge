@@ -10,6 +10,8 @@ import SingleArtist from "./Components/SingleArtist";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Exhibition from "./Components/Exhibition";
+import Counter from "./Components/Counter";
+import RealFooter from "./Components/RealFooter";
 
 function App() {
   return (
@@ -25,7 +27,9 @@ function App() {
                 <Section1 />
                 <Section2 />
                 <New />
+                <Counter />
                 <Footer />
+                <RealFooter />
 
                 <title>Bridging Brushes</title>
               </>
@@ -54,7 +58,7 @@ function App() {
             element={
               <>
                 <Header />
-                <Exhibition/>
+                <Exhibition />
               </>
             }
           />

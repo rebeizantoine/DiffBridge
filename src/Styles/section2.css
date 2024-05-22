@@ -135,11 +135,12 @@
 
 .artist-list {
   display: flex;
-  height: 1000px;
+  height: auto;
 }
 
 .right-image-des img {
-  max-width: 400px;
+  max-width: 445px !important;
+  width: 445px;
   height: 300px;
   margin-right: 75px;
 }
@@ -189,6 +190,80 @@
   background-color: #111111;
 }
 .left-artist-des-button {
+  margin-top: -40px !important;
+  margin-left: 350px;
+}
+/* //////////////////////////////////// */
+.artist-list-right {
+  display: flex;
+  height: auto;
+  margin-left: -0;
+  width: 100%;
+  flex-direction: row;
+}
+.right-image-des2 img {
+  max-width: 400px;
+  max-width: 445px !important;
+  height: 300px !important;
+  width: 445px;
+  margin-left: 80px;
+  order: 3;
+  position: relative;
+  left: 100px;
+}
+
+.right-rect2 img {
+  width: 100px;
+  height: 300px;
+  margin-left: 40px;
+  order: 1;
+  position: relative;
+  left: 100px;
+}
+.left-artist-des2 {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px !important;
+  left: 250px;
+  position: relative;
+}
+.left-artist-des2 h2 {
+  font-size: 25px;
+  font-family: rubik;
+  font-weight: 700px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: left;
+}
+.left-artist-des2 p {
+  max-width: 445px;
+  height: 220px;
+  font-size: 13px;
+  line-height: 1.9;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: Rubik, sans-serif;
+  margin: 20px auto; /* Center the paragraph horizontally with top and bottom margins */
+  padding: 0 20px; /* Equal padding on the left and right */
+  display: inline-block; /* Ensures the paragraph adheres to the max-width and height constraints */
+  text-align: justify; /* Justify text for a clean look */
+  margin: 0; /* Remove default margin for tighter spacing */
+  padding: 0; /* Remove default padding for tighter spacing */
+  margin-bottom: 30px;
+}
+.left-artist-des2 button {
+  width: 83px;
+  height: 35px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 700px;
+  color: #ffffff;
+  background-color: #111111;
+}
+.left-artist-des-button2 {
   margin-top: -40px !important;
   margin-left: 350px;
 }
