@@ -3,7 +3,6 @@
   height: 200px;
   display: flex;
   margin-left: 50px;
-  border: 1px solid gray;
   margin-bottom: 100px;
 }
 
@@ -69,6 +68,10 @@
   background-color: white;
   margin-left: 15px;
   margin-right: 60px;
+  transition: background-image 0.3s ease-in-out;
+}
+.white-emoji ::hover {
+  cursor: pointer;
 }
 .white-emoji img {
   width: 45px;
@@ -77,6 +80,9 @@
   padding-bottom: 0px;
   position: relative;
   top: 5px;
+}
+.white-emoji img ::hover {
+  cursor: pointer;
 }
 .stay-up {
   width: 750px;
@@ -121,4 +127,47 @@
 }
 .footer3 {
   height: 250px;
+}
+.button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  position: relative;
+  top: -60px;
+  left: -200px;
+}
+
+.span123 {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
