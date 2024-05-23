@@ -12,6 +12,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Exhibition from "./Components/Exhibition";
 import Counter from "./Components/Counter";
 import RealFooter from "./Components/RealFooter";
+import EventsandPrograms from "./Components/EventsandPrograms";
+import Gallery from "./Components/Gallery";
 
 function App() {
   return (
@@ -27,10 +29,11 @@ function App() {
                 <Section1 />
                 <Section2 />
                 {/* <New /> */}
+                <Gallery />
+                <EventsandPrograms />
                 <Counter />
                 {/* <Footer /> */}
                 <RealFooter />
-
                 <title>Bridging Brushes</title>
               </>
             }
@@ -59,6 +62,24 @@ function App() {
               <>
                 <Header />
                 <Exhibition />
+              </>
+            }
+          />
+          <Route
+            path="/exhibition123"
+            element={
+              <>
+                <Header />
+                <EventsandPrograms />
+              </>
+            }
+          />
+          <Route
+            path="/gallery123"
+            element={
+              <>
+                <Header />
+                <Gallery />
               </>
             }
           />

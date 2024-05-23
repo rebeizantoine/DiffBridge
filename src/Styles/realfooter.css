@@ -1,8 +1,10 @@
 .all-footer {
-  width: 100%;
-  height: auto;
+  width: 1700px;
+  height: 200px;
   display: flex;
   margin-left: 50px;
+  border: 1px solid gray;
+  margin-bottom: 100px;
 }
 
 .location1 {
