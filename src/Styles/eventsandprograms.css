@@ -135,21 +135,83 @@
   left: 150px;
 }
 .exhibiii {
-  width: 300px;
-  height: 50px;
+  width: 200px;
+  height: auto;
   color: #b89d4f;
   margin-left: 42%;
   position: relative;
   top: -80px;
 }
 .exhibiii-button {
-  color: #b89d4f;
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text horizontally */
+  position: relative;
+  padding: 0.6em 2em;
   border: 1.5px solid #b89d4f;
-  padding: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
+  border-radius: 0.25em;
+  width: 200px;
+  height: 40px;
+  color: #b89d4f;
+  font-size: 1.5em;
+  font-weight: 600;
   letter-spacing: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  background-color: transparent; /* Ensures background is transparent */
 }
+
+.exhibiii-button p {
+  z-index: 1;
+  margin: 0; /* Remove default margin from p tag */
+}
+
+.exhibiii-button:hover {
+  color: #212121;
+}
+
+.exhibiii-button:active {
+  border-color: teal;
+}
+
+.exhibiii-button::after,
+.exhibiii-button::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: #b89d4f;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.exhibiii-button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.exhibiii-button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.exhibiii-button:hover::before {
+  transform: translateX(-1em);
+}
+
+.exhibiii-button:hover::after {
+  transform: translateX(1em);
+}
+]]
+.exhibiii-button:active::before,
+.exhibiii-button:active::after {
+  background: teal;
+}
+
 .events-and-programs {
   margin-bottom: 100px;
 }

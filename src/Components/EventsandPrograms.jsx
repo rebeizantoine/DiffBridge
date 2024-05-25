@@ -61,7 +61,9 @@ const EventsandPrograms = () => {
           </div>
         </div>
         <div className="exhibiii">
-          <button className="exhibiii-button">VIEW ALL EXHIBITIONS</button>
+          <button className="exhibiii-button">
+            <p>VIEW ALL EXHIBITIONS</p>
+          </button>
         </div>
       </div>
     </div>

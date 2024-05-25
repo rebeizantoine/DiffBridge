@@ -61,7 +61,9 @@ const Section2 = () => {
             look and feel your best. Trust me to elevate your fashion and media
             endeavors with our impeccable artistry and styling expertise.
           </p>
-          <button className="left-artist-des-button">Read More</button>
+          <button class="button-special">
+            <p>Read More</p>
+          </button>
         </div>
         <div className="right-image-des">
           <img src={smallimage4} alt="" />
@@ -90,7 +92,9 @@ const Section2 = () => {
             look and feel your best. Trust me to elevate your fashion and media
             endeavors with our impeccable artistry and styling expertise.
           </p>
-          <button className="left-artist-des-button2">Read More</button>
+          <button class="button-special123">
+            <p>Read More</p>
+          </button>
         </div>
       </div>
       <div className="artist-list">
@@ -106,7 +110,9 @@ const Section2 = () => {
             look and feel your best. Trust me to elevate your fashion and media
             endeavors with our impeccable artistry and styling expertise.
           </p>
-          <button className="left-artist-des-button">Read More</button>
+          <button class="button-special">
+            <p>Read More</p>
+          </button>
         </div>
         <div className="right-image-des">
           <img src={smallimage4} alt="" />
@@ -135,7 +141,9 @@ const Section2 = () => {
             look and feel your best. Trust me to elevate your fashion and media
             endeavors with our impeccable artistry and styling expertise.
           </p>
-          <button className="left-artist-des-button2">Read More</button>
+          <button class="button-special123">
+            <p>Read More</p>
+          </button>
         </div>
       </div>
     </div>
