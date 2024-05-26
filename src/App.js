@@ -14,6 +14,7 @@ import Counter from "./Components/Counter";
 import RealFooter from "./Components/RealFooter";
 import EventsandPrograms from "./Components/EventsandPrograms";
 import Gallery from "./Components/Gallery";
+import SingleExhebition from "./Components/SingleExhebition";
 
 function App() {
   return (
@@ -62,6 +63,16 @@ function App() {
               <>
                 <Header />
                 <Exhibition />
+              </>
+            }
+          />
+          <Route
+            path="/singleex"
+            element={
+              <>
+                <Header />
+                <SingleExhebition />
+                <Footer />
               </>
             }
           />

@@ -206,7 +206,7 @@
 .exhibiii-button:hover::after {
   transform: translateX(1em);
 }
-]]
+
 .exhibiii-button:active::before,
 .exhibiii-button:active::after {
   background: teal;
