@@ -15,6 +15,7 @@ import RealFooter from "./Components/RealFooter";
 import EventsandPrograms from "./Components/EventsandPrograms";
 import Gallery from "./Components/Gallery";
 import SingleExhebition from "./Components/SingleExhebition";
+import Hero2 from "./Components/Hero2";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <>
                 <Header />
                 <Hero />
+                <Hero2 />
                 <Section1 />
                 <Section2 />
                 {/* <New /> */}

@@ -3,6 +3,27 @@ import "../Styles/artists.css";
 import topimageartist from "../Images/stock_face3.png";
 import lastestwork from "../Images/image_placeholder2.png";
 const Artists = () => {
+  // scroll-animations.js
+  document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll(".animate-on-scroll");
+
+    function handleScroll() {
+      animatedElements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight =
+          window.innerHeight || document.documentElement.clientHeight;
+        const threshold = 200; // Adjust this value as needed (e.g., 200px or 300px)
+
+        if (rect.top <= windowHeight - threshold) {
+          element.classList.add("animated");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run once on page load in case elements are already in view
+  });
+
   return (
     <div>
       <div className="ui-input-container">

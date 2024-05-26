@@ -20,7 +20,7 @@ const Section2 = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisible(true);
+            entry.target.classList.add("animated");
             observer.unobserve(entry.target);
           }
         });
@@ -28,16 +28,15 @@ const Section2 = () => {
       { threshold: 0.1 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    const elements = document.querySelectorAll(
+      ".animate-on-scroll, .animate-on-scroll-right, .delay-2"
+    );
+    elements.forEach((el) => observer.observe(el));
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
+      elements.forEach((el) => observer.unobserve(el));
     };
-  }, [ref]);
+  }, []);
 
   return (
     <div
@@ -48,7 +47,7 @@ const Section2 = () => {
         <h2 className="section-h21">Featured Paintings</h2>
       </div>
 
-      <div className="artist-list">
+      <div className="artist-list animate-on-scroll delay1">
         <div className="left-artist-des">
           <h2>Paolo Hernandez</h2>
           <p>
@@ -65,14 +64,14 @@ const Section2 = () => {
             <p>Read More</p>
           </button>
         </div>
-        <div className="right-image-des">
+        <div className="right-image-des animate-on-scroll delay-2">
           <img src={smallimage4} alt="" />
         </div>
-        <div className="right-rect">
+        <div className="right-rect animate-on-scroll delay-3">
           <img src={greenrect} alt="" />
         </div>
       </div>
-      <div className="artist-list-right">
+      <div className="artist-list animate-on-scroll-right ">
         <div className="right-rect2">
           <img src={greenrect} alt="" />
         </div>
@@ -97,7 +96,7 @@ const Section2 = () => {
           </button>
         </div>
       </div>
-      <div className="artist-list">
+      <div className="artist-list animate-on-scroll delay-1">
         <div className="left-artist-des">
           <h2>Paolo Hernandez</h2>
           <p>
@@ -114,18 +113,18 @@ const Section2 = () => {
             <p>Read More</p>
           </button>
         </div>
-        <div className="right-image-des">
+        <div className="right-image-des delay-2">
           <img src={smallimage4} alt="" />
         </div>
-        <div className="right-rect">
+        <div className="right-rect delay-3">
           <img src={greenrect} alt="" />
         </div>
       </div>
-      <div className="artist-list-right">
-        <div className="right-rect2">
+      <div className="artist-list animate-on-scroll delay-1">
+        <div className="right-rect2 delay-2">
           <img src={greenrect} alt="" />
         </div>
-        <div className="right-image-des2">
+        <div className="right-image-des2 delay-3">
           <img src={smallimage4} alt="" />
         </div>
 

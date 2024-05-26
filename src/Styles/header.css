@@ -79,3 +79,28 @@ a {
   transform: scale(1.1); /* Increase size by 10% on hover */
   transition: transform 0.3s ease; /* Smooth transition */
 }
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.header-title {
+  animation: fade-down 1s 0.4s ease-in-out backwards;
+}
