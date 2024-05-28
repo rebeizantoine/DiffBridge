@@ -16,6 +16,7 @@ import EventsandPrograms from "./Components/EventsandPrograms";
 import Gallery from "./Components/Gallery";
 import SingleExhebition from "./Components/SingleExhebition";
 import Hero2 from "./Components/Hero2";
+import Dashboard from "./Dashboard/Dashboard";
 
 function App() {
   return (
@@ -95,6 +96,14 @@ function App() {
               <>
                 <Header />
                 <Gallery />
+              </>
+            }
+          />
+          <Route
+            path="/dashboard"
+            element={
+              <>
+                <Dashboard />
               </>
             }
           />

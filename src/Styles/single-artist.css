@@ -1,3 +1,21 @@
+@keyframes animate123 {
+  0% {
+    transform: translateX(-100%);
+    scale: 0;
+    opacity: 20%;
+  }
+  50% {
+    transform: translateX(-50%);
+    opacity: 70%;
+    scale: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+    scale: 1;
+  }
+}
+
 .sa-all {
   margin: 0;
   padding: 0;
@@ -13,6 +31,7 @@
   height: 350px;
   margin-top: 15px;
   margin-right: 25px;
+  animation: animate123 1s forwards linear;
 }
 
 .right-sa {
