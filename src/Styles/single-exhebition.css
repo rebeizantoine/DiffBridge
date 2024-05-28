@@ -1,0 +1,65 @@
+/* General page styling */
+.single-exhibition-page {
+    font-family: 'Libre Baskerville', sans-serif;
+    color: white;
+    background-color: #1f1f1f; /* Background color */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+  }
+  
+  .banner {
+    width: 90%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px; /* Increase spacing below the banner */
+  }
+  
+  .exhibition-title {
+    font-size: 3em; /* Make the font size bigger */
+    font-weight: bold;
+    margin-bottom: 100px; /* Increase spacing below the title */
+  }
+  
+  .exhibition-description {
+    font-size: 1.5em; /* Make the font size bigger */
+    margin-bottom: 30px; /* Increase spacing below the description */
+    width: 80%;
+    max-width: 800px;
+    text-align: center; /* Center the text */
+  }
+  
+  .exhibition-details {
+    font-size: 1.5em; /* Make the font size bigger */
+    margin-bottom: 30px; /* Increase spacing below the details section */
+    width: 80%;
+    max-width: 800px;
+    text-align: center; /* Center the text */
+  }
+  
+  .detail-item {
+    margin-bottom: 100px; /* Increase spacing between detail items */
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    color: #DD7F1F;
+    display: block; /* Make label a block element to have the content below it */
+  }
+  
+  .contact-details {
+    font-size: 1.5em; /* Make the font size bigger */
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center; /* Center the text */
+  }
+  
+  .contact-item {
+    margin-bottom: 100px; /* Increase spacing between contact items */
+  }
+  
