@@ -68,6 +68,8 @@ const RealFooter = () => {
                   backgroundImage: `url(${
                     hoveredEmoji.facebook ? facebookGif : facebook
                   })`,
+                  width: `50px`,
+                  height: `50px`,
                 }}
               ></div>
             </li>
@@ -80,6 +82,8 @@ const RealFooter = () => {
                   backgroundImage: `url(${
                     hoveredEmoji.pinterest ? pinterestGif : pinterest
                   })`,
+                  width: `50px`,
+                  height: `50px`,
                 }}
               ></div>
             </li>
@@ -92,6 +96,8 @@ const RealFooter = () => {
                   backgroundImage: `url(${
                     hoveredEmoji.instagram ? instagramGif : instagram
                   })`,
+                  width: `50px`,
+                  height: `50px`,
                 }}
               ></div>
             </li>
@@ -104,6 +110,8 @@ const RealFooter = () => {
                   backgroundImage: `url(${
                     hoveredEmoji.youtube ? youtubeGif : youtube
                   })`,
+                  width: `50px`,
+                  height: `50px`,
                 }}
               ></div>
             </li>

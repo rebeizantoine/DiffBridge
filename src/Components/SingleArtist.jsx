@@ -1,32 +1,212 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import Slider from "react-slick";
 import "../Styles/single-artist.css"; // Updated CSS file name
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import artistImage from "../Images/stock_face1.png"; // Placeholder image path
-import backgroundImage from "../Images/image_placeholder1.png"; // Placeholder for background image
 import artImage1 from "../Images/image_placeholder1.png"; // Placeholder for artwork image
 import artImage2 from "../Images/image_placeholder2.png"; // Placeholder for artwork image
+import artImage3 from "../Images/image_placeholder3.png"; // Placeholder for artwork image
+import facebook from "../Images/facebook.png";
+import pinterest from "../Images/pinterest.png";
+import instagram from "../Images/instagram.png";
+import youtube from "../Images/youtube.png";
+import facebookGif from "../Images/icons8-facebook.gif"; // replace with the actual path
+import pinterestGif from "../Images/icons8-pinterest.gif"; // replace with the actual path
+import instagramGif from "../Images/icons8-instagram.gif"; // replace with the actual path
+import youtubeGif from "../Images/icons8-youtube.gif";
 
 const SingleArtist = () => {
+  const [hoveredEmoji, setHoveredEmoji] = useState({
+    facebook: false,
+    pinterest: false,
+    instagram: false,
+    youtube: false,
+  });
+
+  const [activeSlide, setActiveSlide] = useState(0);
+  const sliderRef = useRef(null);
+
+  const handleMouseEnter = (emoji) => {
+    setHoveredEmoji((prevState) => ({
+      ...prevState,
+      [emoji]: true,
+    }));
+  };
+
+  const handleMouseLeave = (emoji) => {
+    setHoveredEmoji((prevState) => ({
+      ...prevState,
+      [emoji]: false,
+    }));
+  };
+
+  const handleImageClick = (index) => {
+    setActiveSlide(index);
+    sliderRef.current.slickGoTo(index);
+  };
+
+  const paintings = [
+    {
+      image: artImage1,
+      title: "Sunset Vista",
+      type: "Oil on Canvas",
+      description: "A beautiful depiction of a sunset over a serene landscape.",
+    },
+    {
+      image: artImage2,
+      title: "Morning Bliss",
+      type: "Acrylic on Wood",
+      description:
+        "Captures the peacefulness of a morning with vibrant colors.",
+    },
+    {
+      image: artImage3,
+      title: "Ocean Breeze",
+      type: "Watercolor",
+      description: "A calm and refreshing view of the ocean.",
+    },
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    beforeChange: (current, next) => setActiveSlide(next),
+  };
+
   return (
-    <div className="single-artist-page">
-      <header className="header">
-        <h1 className="artist-name">Artist Name</h1>
-      </header>
-      <div className="artist-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
-        <div className="artist-content">
-          <img src={artistImage} alt="Artist" className="artist-image" />
-          <p className="artist-description">
-            This is a generic description of the artist. It provides an overview of their work, style, and artistic vision. More details can be added here to give a comprehensive understanding of the artist.
-          </p>
+    <div className="sa">
+      <div className="sa-all">
+        <div className="left-sa">
+          <img src={artistImage} alt="Artist" />
+        </div>
+        <div className="right-sa">
+          <div className="on-top-sa">
+            <h1>Adele Webster</h1>
+            <h3>Kingston, ON</h3>
+          </div>
+          <div className="middle-sa">
+            <h2>Booth 805</h2>
+            <h2>Main</h2>
+          </div>
+          <div className="bottom-sa">
+            <p>
+              Adele is an award-winning British/Canadian artist currently based
+              along the shores of Lake Ontario in Kingston. She focuses on
+              gesture and color, layering washes of paint on wood panels to
+              create her work, which is inspired by nature's landscapes. Using a
+              minimalist style, she brings balance in an attempt to decipher the
+              everyday chaos towards calm. She intends to create a mood or evoke
+              a dream-like memory that one can escape into while enjoying the
+              playfulness of the contemporary peaceful vista.
+            </p>
+          </div>
+          <div className="website-sa"></div>
+          <div className="emoji-sa">
+            <div className="footer3-sa">
+              <div className="emojis-sa">
+                <nav>
+                  <li>
+                    <div
+                      className="white-emoji-sa"
+                      onMouseEnter={() => handleMouseEnter("facebook")}
+                      onMouseLeave={() => handleMouseLeave("facebook")}
+                      style={{
+                        backgroundImage: `url(${
+                          hoveredEmoji.facebook ? facebookGif : facebook
+                        })`,
+                        width: `50px`,
+                        height: `50px`,
+                      }}
+                    ></div>
+                  </li>
+                  <li>
+                    <div
+                      className="white-emoji-sa"
+                      onMouseEnter={() => handleMouseEnter("pinterest")}
+                      onMouseLeave={() => handleMouseLeave("pinterest")}
+                      style={{
+                        backgroundImage: `url(${
+                          hoveredEmoji.pinterest ? pinterestGif : pinterest
+                        })`,
+                        width: `50px`,
+                        height: `50px`,
+                      }}
+                    ></div>
+                  </li>
+                  <li>
+                    <div
+                      className="white-emoji-sa"
+                      onMouseEnter={() => handleMouseEnter("instagram")}
+                      onMouseLeave={() => handleMouseLeave("instagram")}
+                      style={{
+                        backgroundImage: `url(${
+                          hoveredEmoji.instagram ? instagramGif : instagram
+                        })`,
+                        width: `50px`,
+                        height: `50px`,
+                      }}
+                    ></div>
+                  </li>
+                  <li>
+                    <div
+                      className="white-emoji-sa"
+                      onMouseEnter={() => handleMouseEnter("youtube")}
+                      onMouseLeave={() => handleMouseLeave("youtube")}
+                      style={{
+                        backgroundImage: `url(${
+                          hoveredEmoji.youtube ? youtubeGif : youtube
+                        })`,
+                        width: `50px`,
+                        height: `50px`,
+                      }}
+                    ></div>
+                  </li>
+                  <button className="button-sa">
+                    <span className="span123-sa">Website</span>
+                  </button>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="artworks-section">
-        <div className="artwork">
-          <img src={artImage1} alt="Art 1" className="artwork-image" />
-          <p className="artwork-description">"Name of the Art 1" - Date Created</p>
+      <div className="static-and-non-sa">
+        <div className="static-images-sa">
+          {paintings.map((painting, index) => (
+            <img
+              key={index}
+              src={painting.image}
+              alt={painting.title}
+              className={`static-image-sa ${
+                activeSlide === index ? "active" : ""
+              }`}
+              onClick={() => handleImageClick(index)}
+            />
+          ))}
         </div>
-        <div className="artwork">
-          <img src={artImage2} alt="Art 2" className="artwork-image" />
-          <p className="artwork-description">"Name of the Art 2" - Date Created</p>
+        <div className="gallery-sa">
+          <Slider ref={sliderRef} {...settings}>
+            {paintings.map((painting, index) => (
+              <div key={index} className="slide-sa">
+                <div className="slide-content-sa">
+                  <img
+                    src={painting.image}
+                    alt={painting.title}
+                    className="painting-image-sa"
+                  />
+                  <div className="painting-info-sa">
+                    <h3>{painting.title}</h3>
+                    <p>{painting.type}</p>
+                    <p>{painting.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </div>
