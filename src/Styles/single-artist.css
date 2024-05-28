@@ -1,99 +1,387 @@
-/* General page styling */
-.single-artist-page {
-    font-family: Libre Baskerville, sans-serif;
-    color: white;
-    background-color:transparent; /* Background color */
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh; /* Ensure the page takes at least the full viewport height */
-  }
-  
-  .header {
-    padding: 20px 0;
-    width: 100%;
-  }
-  
-  .artist-name {
-    font-size: 3em; /* Adjust the font size as needed */
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: white; /* Ensure the text is white */
-  }
-  
-  .artist-section {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    padding: 40px 20px;
-    border-radius: 8px;
-    width: 80%; /* Fixed width */
-    max-width: 800px; /* Ensure it doesn't get too wide */
-    margin-bottom: 40px;
-  }
-  
-  .artist-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
-    border-radius: 8px;
-    z-index: 1;
-  }
-  
-  .artist-content {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .artist-image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
-  .artist-description {
-    font-size: 1.2em;
-    padding: 0 20px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .artworks-section {
-    width: 80%; /* Fixed width */
-    max-width: 800px; /* Ensure it doesn't get too wide */
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .artwork {
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .artwork-image {
-    width: 50%; /* Adjust the width as needed */
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .artwork-description {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #ccc; /* Slightly lighter color for the description */
-    text-align: center;
-  }
-  
+.sa-all {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.left-sa img {
+  width: 500px;
+  height: 350px;
+  margin-top: 15px;
+  margin-right: 25px;
+}
+
+.right-sa {
+  display: grid;
+  margin-top: 5px;
+}
+
+.on-top-sa {
+  margin-bottom: 20px;
+}
+
+.on-top-sa h1 {
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  font-size: 33px;
+}
+
+.on-top-sa h3 {
+  font-size: 20px;
+  text-transform: none;
+  line-height: 1.3em;
+  margin-top: 5px;
+  font-weight: lighter;
+}
+
+.middle-sa h2 {
+  font-size: 20px;
+  text-transform: none;
+  line-height: 1.3em;
+}
+
+.bottom-sa p {
+  font-size: 17px;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+.all-footer {
+  width: 1700px;
+  height: 200px;
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+.location1 {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 153px;
+  text-align: left;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.location1 h2 {
+  width: 102px;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  width: 190px;
+  margin-bottom: 25px;
+}
+
+.location1 p {
+  width: 190px;
+  height: 40px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.location-footer1 {
+  display: flex;
+}
+
+.footer2 {
+  position: relative;
+  left: 100px;
+  height: 300px;
+}
+
+.copyrightbottom li {
+  margin-right: 55px;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.copyrightbottom nav {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 100px;
+  margin-top: 50px;
+  color: white;
+}
+
+.emojis-sa {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the icons horizontally */
+  margin-top: 50px;
+}
+
+.emojis-sa nav {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  list-style: none;
+  padding: 0;
+}
+
+.emojis-sa li {
+  margin-bottom: 20px; /* Add space between each emoji */
+}
+
+.white-emoji-sa {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: white;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.white-emoji-sa:hover {
+  cursor: pointer;
+}
+
+.stay-up {
+  width: 750px;
+  height: 75px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: white;
+  margin-left: 85px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.subscribe-footer {
+  height: auto;
+}
+
+.subscribe-footer button-sa {
+  width: 160px;
+  height: 45px;
+  border: 1px white;
+  background-color: #1f1f1f;
+  position: relative;
+  left: -195px;
+  top: -55px;
+}
+
+.subscribe-footer button-sa {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 1em;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  bottom: 10px;
+}
+
+.subscribe-footer button-sa:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer3-sa {
+  height: 250px;
+}
+
+.button-sa {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  position: relative;
+  top: -0px;
+  left: -60px;
+}
+
+.span123-sa {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.button-sa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.button-sa:hover {
+  color: #fff;
+}
+
+.button-sa:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.sa {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.sa-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin-bottom: -100px;
+}
+
+.left-sa img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.right-sa {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.on-top-sa h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.on-top-sa h3 {
+  margin: 5px 0;
+  color: gray;
+}
+
+.middle-sa h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.bottom-sa p {
+  line-height: 1.6;
+}
+
+.emoji-sa {
+  margin-top: 20px;
+  position: relative;
+  bottom: 350px;
+  left: 800px;
+}
+
+.footer3-sa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emojis-sa nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.emojis-sa li {
+  margin-bottom: 20px; /* Add space between each emoji */
+}
+
+.white-emoji-sa {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: white;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.white-emoji-sa:hover {
+  cursor: pointer;
+}
+
+.static-images-sa {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px 0; /* Increase margin to add more space */
+}
+
+.static-image-sa {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.static-image-sa.active {
+  transform: scale(1.2);
+}
+
+.gallery-sa {
+  margin: 20px auto;
+  width: 80%;
+  margin-bottom: 150px;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  display: flex;
+  align-items: center;
+}
+
+.slide-sa {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slide-content-sa {
+  display: flex;
+}
+
+.painting-image-sa {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.painting-info-sa {
+  max-width: 300px;
+  color: white;
+  opacity: 60%;
+}
+
+.painting-info-sa h3 {
+  margin: 0 0 10px 0;
+}
+
+.painting-info-sa p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.static-and-non-sa {
+  margin-top: -180px !important;
+}

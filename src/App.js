@@ -56,6 +56,8 @@ function App() {
               <>
                 <Header />
                 <SingleArtist />
+
+                <RealFooter />
               </>
             }
           />
