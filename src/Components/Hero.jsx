@@ -7,10 +7,24 @@ const Hero = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch((error) => {
+    const videoElement = videoRef.current;
+
+    if (videoElement) {
+      videoElement.play().catch((error) => {
         console.log("Autoplay failed", error);
       });
+
+      const handleVideoEnd = () => {
+        videoElement.play().catch((error) => {
+          console.log("Autoplay failed after video ended", error);
+        });
+      };
+
+      videoElement.addEventListener("ended", handleVideoEnd);
+
+      return () => {
+        videoElement.removeEventListener("ended", handleVideoEnd);
+      };
     }
   }, []);
 

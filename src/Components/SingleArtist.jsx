@@ -1,5 +1,6 @@
-import React, { useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Slider from "react-slick";
+import ScrollReveal from "scrollreveal";
 import "../Styles/single-artist.css"; // Updated CSS file name
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -26,6 +27,36 @@ const SingleArtist = () => {
 
   const [activeSlide, setActiveSlide] = useState(0);
   const sliderRef = useRef(null);
+
+  useEffect(() => {
+    ScrollReveal({
+      distance: "60px",
+      duration: 2500,
+      delay: 400,
+      reset: true,
+    });
+
+    ScrollReveal().reveal(".left-sa img", {
+      delay: 500,
+      origin: "left",
+    });
+    ScrollReveal().reveal(
+      ".right-sa .on-top-sa, .right-sa .middle-sa, .right-sa .bottom-sa",
+      {
+        delay: 600,
+        origin: "right",
+      }
+    );
+    ScrollReveal().reveal(".static-images-sa img", {
+      delay: 700,
+      origin: "bottom",
+      interval: 200,
+    });
+    ScrollReveal().reveal(".gallery-sa", {
+      delay: 800,
+      origin: "top",
+    });
+  }, []);
 
   const handleMouseEnter = (emoji) => {
     setHoveredEmoji((prevState) => ({

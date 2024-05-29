@@ -43,9 +43,9 @@ const Section2 = () => {
       className={`section2-container ${visible ? "visible" : "fade-in"}`}
       ref={ref}
     >
-      <div className="featured-artists">
+      {/* <div className="featured-artists">
         <h2 className="section-h21">Featured Paintings</h2>
-      </div>
+      </div> */}
 
       <div className="artist-list animate-on-scroll delay1">
         <div className="left-artist-des">
@@ -96,7 +96,7 @@ const Section2 = () => {
           </button>
         </div>
       </div>
-      <div className="artist-list animate-on-scroll delay-1">
+      <div className="artist-list animate-on-scroll delay1">
         <div className="left-artist-des">
           <h2>Paolo Hernandez</h2>
           <p>
@@ -113,10 +113,10 @@ const Section2 = () => {
             <p>Read More</p>
           </button>
         </div>
-        <div className="right-image-des delay-2">
+        <div className="right-image-des animate-on-scroll delay-2">
           <img src={smallimage4} alt="" />
         </div>
-        <div className="right-rect delay-3">
+        <div className="right-rect animate-on-scroll delay-3">
           <img src={greenrect} alt="" />
         </div>
       </div>

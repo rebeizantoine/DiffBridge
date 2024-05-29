@@ -41,12 +41,12 @@ const Header = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="weird-blue" href="/#projects">
+                    <a className="weird-blue" href="/aboutus">
                       About Us
                     </a>
                   </li>
                   <li>
-                    <a href="/contact">Contact</a>
+                    <a href="/contactus">Contact</a>
                   </li>
                 </ul>
               </nav>

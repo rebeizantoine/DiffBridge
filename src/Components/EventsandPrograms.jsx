@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import "../Styles/eventsandprograms.css";
 import imageevents from "../Images/exhibition-cow.png";
 import goldline from "../Images/exhitbition-line.png";
 
 const EventsandPrograms = () => {
+  useEffect(() => {
+    ScrollReveal({
+      distance: "60px",
+      duration: 2500,
+      delay: 400,
+      reset: true,
+    });
+
+    ScrollReveal().reveal(".events-on-top h1", {
+      delay: 300,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".events-123, .events-1234", {
+      delay: 400,
+      origin: "bottom",
+    });
+    ScrollReveal().reveal(".right-exhibition, .right-exhibition4", {
+      delay: 500,
+      origin: "right",
+    });
+    ScrollReveal().reveal(".cow-image, .cow-image4", {
+      delay: 600,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".exhibiii-button", {
+      delay: 700,
+      origin: "bottom",
+    });
+  }, []);
+
   return (
     <div>
       <div className="events-and-programs">

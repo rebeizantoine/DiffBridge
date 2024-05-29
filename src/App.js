@@ -17,6 +17,8 @@ import Gallery from "./Components/Gallery";
 import SingleExhebition from "./Components/SingleExhebition";
 import Hero2 from "./Components/Hero2";
 import Dashboard from "./Dashboard/Dashboard";
+import AboutUs from "./Components/Aboutus";
+import ContactUs from "./Components/Contactus";
 
 function App() {
   return (
@@ -29,11 +31,11 @@ function App() {
               <>
                 <Header />
                 <Hero />
-                <Hero2 />
+                {/* <Hero2 /> */}
                 <Section1 />
                 <Section2 />
                 {/* <New /> */}
-                <Gallery />
+                <Gallery />1
                 <EventsandPrograms />
                 <Counter />
                 {/* <Footer /> */}
@@ -57,6 +59,28 @@ function App() {
               <>
                 <Header />
                 <SingleArtist />
+
+                <RealFooter />
+              </>
+            }
+          />
+          <Route
+            path="/aboutus"
+            element={
+              <>
+                <Header />
+                <AboutUs />
+
+                <RealFooter />
+              </>
+            }
+          />
+          <Route
+            path="/contactus"
+            element={
+              <>
+                <Header />
+                <ContactUs />
 
                 <RealFooter />
               </>
