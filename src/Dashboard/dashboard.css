@@ -179,3 +179,66 @@ textarea {
   display: flex;
   align-items: flex-start;
 }
+
+/* Table section */
+
+.artists-table,
+.exhibitions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.artists-table th,
+.artists-table td,
+.exhibitions-table th,
+.exhibitions-table td {
+  border: 2px solid #846f63;
+  padding: 10px;
+  text-align: left;
+}
+
+.artists-table th,
+.exhibitions-table th {
+  background-color: #f5ebe0;
+  color: #846f63;
+}
+
+.artists-table img,
+.exhibitions-table img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.edit-btn,
+.delete-btn {
+  margin-right: 5px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 20px;
+}
+
+.edit-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #846f63;
+}
+
+.save-btn,
+.cancel-btn {
+  width: auto;
+  padding: 8px 15px;
+}

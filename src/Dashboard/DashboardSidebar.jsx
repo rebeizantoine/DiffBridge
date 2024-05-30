@@ -3,11 +3,11 @@ import React from "react";
 function DashboardSidebar() {
   return (
     <div className="sidebar">
-      <a href="#cv">CV</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
+      <a href="#cv">HomePage</a>
+      <a href="#about">Artists</a>
+      <a href="#experience">Exhibitions</a>
+      <a href="#skills">Contact Us</a>
+      <a href="#projects">About Us</a>
     </div>
   );
 }

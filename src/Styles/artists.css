@@ -45,7 +45,7 @@
 }
 
 .ui-input:focus ~ .ui-input-highlight {
-  width: 100%;
+  width: 101%;
 }
 
 .ui-input-icon {
@@ -117,6 +117,7 @@
 .medium-side {
   width: 100%;
   text-align: left;
+  display: none;
 }
 
 .bottom-side {

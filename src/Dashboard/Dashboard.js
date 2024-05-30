@@ -15,10 +15,11 @@ function Dashboard() {
       <DashboardSidebar />
       <div className="main">
         <DashboardCV />
-        <DashboardAbout />
         <DashboardExperience />
+
         <DashboardSkills />
-        <DashboardProjects />
+        <DashboardAbout />
+        {/* <DashboardProjects /> */}
       </div>
     </div>
   );

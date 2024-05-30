@@ -47,8 +47,8 @@ const Section1 = () => {
       </Helmet>
       <div class="scroll-watcher"></div>
       {/* <div className="featured-paintings">
-        <h2 className="section-h2">Featured Paintings</h2>
-      </div> */}
+          <h2 className="section-h2">Featured Paintings</h2>
+        </div> */}
       <Slider {...settings} className="slider-container">
         <div className="image-item">
           <div className="image-wrapper">
