@@ -19,7 +19,8 @@ import Hero2 from "./Components/Hero2";
 import Dashboard from "./Dashboard/Dashboard";
 import AboutUs from "./Components/Aboutus";
 import ContactUs from "./Components/Contactus";
-
+import Hero3 from "./Components/Hero3";
+import Section21 from "./Components/Section21";
 function App() {
   return (
     <div className="App">
@@ -30,14 +31,16 @@ function App() {
             element={
               <>
                 <Header />
-                <Hero />
+                <Hero3 />
+                {/* <Hero /> */}
                 {/* <Hero2 /> */}
-                <Section1 />
-                <Section2 />
+                {/* <Section1 /> */}
+                <Section21 />
+                {/* <Section2 /> */}
                 {/* <New /> */}
                 <Gallery />1
                 <EventsandPrograms />
-                <Counter />
+                {/* <Counter /> */}
                 {/* <Footer /> */}
                 <RealFooter />
                 <title>Bridging Brushes</title>
@@ -92,6 +95,24 @@ function App() {
               <>
                 <Header />
                 <Exhibition />
+              </>
+            }
+          />
+          <Route
+            path="/section21"
+            element={
+              <>
+                <Header />
+                <Section21 />
+              </>
+            }
+          />
+          <Route
+            path="/hero3"
+            element={
+              <>
+                <Header />
+                <Hero3 />
               </>
             }
           />

@@ -7,30 +7,30 @@ import goldline from "../Images/exhitbition-line.png";
 const EventsandPrograms = () => {
   useEffect(() => {
     ScrollReveal({
-      distance: "60px",
-      duration: 2500,
-      delay: 400,
+      distance: "20px",
+      duration: 300, // Decrease the duration to make the reveal faster
+      delay: 50, // Decrease the delay for faster reveal
       reset: true,
     });
 
     ScrollReveal().reveal(".events-on-top h1", {
-      delay: 300,
+      delay: 50, // Adjust delay for faster reveal
       origin: "left",
     });
     ScrollReveal().reveal(".events-123, .events-1234", {
-      delay: 400,
+      delay: 100, // Adjust delay for faster reveal
       origin: "bottom",
     });
     ScrollReveal().reveal(".right-exhibition, .right-exhibition4", {
-      delay: 500,
+      delay: 150, // Adjust delay for faster reveal
       origin: "right",
     });
     ScrollReveal().reveal(".cow-image, .cow-image4", {
-      delay: 600,
+      delay: 200, // Adjust delay for faster reveal
       origin: "left",
     });
     ScrollReveal().reveal(".exhibiii-button", {
-      delay: 700,
+      delay: 250, // Adjust delay for faster reveal
       origin: "bottom",
     });
   }, []);
