@@ -50,7 +50,7 @@
 
 .ui-input-icon {
   position: absolute;
-  left: 10px;
+  left: 480px;
   top: 50%;
   transform: translateY(-50%);
   color: #999;
@@ -108,6 +108,7 @@
   margin-left: 0;
   list-style-position: inside;
   list-style-type: none;
+  line-height: 50px !important  ;
 }
 
 .right-description li {

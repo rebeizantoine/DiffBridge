@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../Styles/header.css";
 import { Helmet } from "react-helmet";
 import BrushLogo from "../Images/HighRez@3x.jpg";
 import BrushLogopng from "../Images/HR_White.png";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="header-box">
@@ -22,8 +25,13 @@ const Header = () => {
           />
         </Helmet>
         <div className="header-all">
-          <div className="header-title">
-            <img src={BrushLogopng} className="steel-city" alt="" />
+          <div className="header-title" onClick={() => navigate(`/`)}>
+            <img
+              src={BrushLogopng}
+              className="steel-city"
+              alt=""
+              onClick={() => navigate(`/`)}
+            />
           </div>
           <div className="header-center">
             <div className="header-1">
@@ -33,10 +41,10 @@ const Header = () => {
                     <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="">Artists</a>
+                    <a href="/artists">Artists</a>
                   </li>
                   <li>
-                    <a className="weird-blue" href="/#services">
+                    <a className="weird-blue" href="/exhibitions">
                       Exhibitions
                     </a>
                   </li>

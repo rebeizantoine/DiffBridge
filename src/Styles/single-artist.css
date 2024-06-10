@@ -142,6 +142,7 @@
   flex-direction: column; /* Stack items vertically */
   list-style: none;
   padding: 0;
+  box-shadow: none;
 }
 
 .emojis-sa li {
@@ -223,7 +224,7 @@
   cursor: pointer;
   transform: skew(-21deg);
   position: relative;
-  top: -0px;
+  top: -250px;
   left: -60px;
 }
 
@@ -266,6 +267,8 @@
   align-items: flex-start;
   padding: 20px;
   margin-bottom: -100px;
+  position: relative;
+  left: 550px;
 }
 
 .left-sa img {
@@ -380,8 +383,8 @@
 }
 
 .painting-image-sa {
-  width: 300px;
-  height: 500px;
+  width: 500px;
+  height: 700px;
   object-fit: cover;
   margin-right: 20px;
 }
